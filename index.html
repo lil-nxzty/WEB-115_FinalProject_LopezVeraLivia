@@ -1,18 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">   
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Earth Finder</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
-</style>
+        @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
 </head>
 <body>
-    <div id="divy1"><h1>Earth Finder</h1></div>
-    <div id="gmap"><iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sus!4v1778175706322!5m2!1sen!2sus!6m8!1m7!1s0dG_GV0w3j_r5S3DOq7gUg!2m2!1d37.80836463990349!2d-122.4753110024023!3f165.96260890171305!4f8.713114339833837!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="divy1">
+        <h1>Earth Finder</h1>
     </div>
+
+    <div id="parent">
+
+        <div id="gmap">
+            <iframe
+                id="frmer"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="">
+            </iframe>
+        </div>
+
+        <div id="texti">
+            <h1 id="title">Welcome to Earth Finder!</h1>
+
+            <label for="username" id="libel">
+                Please enter your username
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="E.g: Josesocool"
+                required>
+
+            <br>
+
+            <button id="startBtn" onclick="startGame()">Start</button>
+        </div>
+
+    </div>
+
+    <div id="map"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
