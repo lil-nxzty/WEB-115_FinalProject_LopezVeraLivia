@@ -45,7 +45,17 @@ When a user starts a game and selects the amount of scenes, the game will then f
 - Google Maps API
 - VS Code + GitHub
 
-Exponential decay points system: https://www.reddit.com/r/geoguessr/comments/7ekj80/for_all_my_geoguessing_math_nerds/
-Leaflet open-source tutorials and code which i used: https://leafletjs.com/reference.html
-Haversin formula thingy: https://latb.io/geoguessr/articles/the-maths
-I think i should have made a wordle game instead :/
+## Resources
+
+- **Exponential decay scoring system**  
+  https://www.reddit.com/r/geoguessr/comments/7ekj80/for_all_my_geoguessing_math_nerds/
+
+- **Leaflet documentation**  
+  https://leafletjs.com/reference.html
+
+- **Haversine formula explanation**  
+  https://latb.io/geoguessr/articles/the-maths
+
+## Live Site
+
+🔗 https://lil-nxzty.github.io/WEB-115_FinalProject_LopezVeraLivia/
